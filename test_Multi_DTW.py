@@ -53,10 +53,10 @@ def plot_wav(spectrogram, name, save_dir):
 nfft = 512 # number of fft, each frame length is 32ms
 hop = 256 # number of noverlap, each noverlap length is 16ms
 
-ref_man_speech = './test_wav/man_reference.wav'
-man_speech2 = './test_wav/man_comparison.wav'
-woman_speech1 = './test_wav/woman_comparison1.wav'
-woman_speech2 = './test_wav/woman_comparison2.wav'
+ref_man_speech = './data/man_reference.wav'
+man_speech2 = './data/man_comparison.wav'
+woman_speech1 = './data/woman_comparison1.wav'
+woman_speech2 = './data/woman_comparison2.wav'
 
 r_m, sr = librosa.load(ref_man_speech, sr=16000)
 c_m, sr = librosa.load(man_speech2, sr=16000)
