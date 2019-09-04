@@ -20,14 +20,14 @@ dtw_a_c = Multi_DTW.dtw(a, c, len(a), len(c))
 dtw_a_d = Multi_DTW.dtw(a, d, len(a), len(d))
 dtw_a_e = Multi_DTW.dtw(a, e, len(a), len(e))
 
-print(a)
+#print(a)
 print(dtw_a_b)
 print(dtw_a_c)
 print(dtw_a_d)
 print(dtw_a_e)
 
-print("all result shape, a_b:{}, a_c:{}, a_d:{}, a_e:{}".format(np.shape(a), np.shape(dtw_a_b), np.shape(dtw_a_c), np.shape(dtw_a_d), np.shape(dtw_a_e)))
-print("all result, a_1d:{}, b_1d:{}, c_1d:{}, d_1d:{}, e_1d:{}".format(a, dtw_a_b, dtw_a_c, dtw_a_d, dtw_a_e))
+print("all dtw shape is, a_b:{}, a_c:{}, a_d:{}, a_e:{}".format(np.shape(dtw_a_b), np.shape(dtw_a_c), np.shape(dtw_a_d), np.shape(dtw_a_e)))
+print("all dtw result, ab_dtw:{}, ac_dtw:{}, ad_dtw:{}, ae_dtw:{}".format(dtw_a_b, dtw_a_c, dtw_a_d, dtw_a_e))
 
 
 # test real speech (2d spectrogram) 
@@ -50,9 +50,8 @@ def plot_wav(spectrogram, name, save_dir):
     plt.tight_layout()
     plt.savefig(save_dir + name + '.png')
 
-
-nfft = 512
-hop = 256
+nfft = 512 # number of fft, each frame length is 32ms
+hop = 256 # number of noverlap, each noverlap length is 16ms
 
 ref_man_speech = './test_wav/man_reference.wav'
 man_speech2 = './test_wav/man_comparison.wav'
@@ -98,6 +97,3 @@ plot_wav(r_m_spec, 'reference', save_dir)
 plot_wav(cm_dtw, 'dtw_comparison_man1', save_dir)
 plot_wav(cw1_dtw, 'dtw_comparison_woman1', save_dir)
 plot_wav(cw2_dtw, 'dtw_comparison_woman2', save_dir)
-
-print(du)
-
