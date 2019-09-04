@@ -10,8 +10,8 @@ Basic theory is euclidean distance and DTW.
 
 # Installation
 ```
-git clone https://github.com/kaen2891/Multi_DTW_with_Spectrogram.git
-cd Multi_DTW_with_Spectrogram
+git clone https://github.com/kaen2891/Multi_DTW.git
+cd Multi_DTW
 python3 test_Multi_DTW.py
 ```
 
