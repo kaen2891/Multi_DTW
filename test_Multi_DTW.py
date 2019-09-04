@@ -92,7 +92,7 @@ print("reference spectrogram shape {} comparison man spectrogram shape {} compar
 print("dtw comparison man spectrogram shape {} dtw comparison woman1 spectrogram shape {} dtw comparison woman2 spectrogram shape {}".format(np.shape(cm_dtw), np.shape(cw1_dtw), np.shape(cw2_dtw)))
 
 ### plot dtw result###
-save_dir ='./test_wav/'
+save_dir ='./result_figure/'
 plot_wav(r_m_spec, 'reference', save_dir)
 plot_wav(cm_dtw, 'dtw_comparison_man1', save_dir)
 plot_wav(cw1_dtw, 'dtw_comparison_woman1', save_dir)
