@@ -1,13 +1,8 @@
 import numpy as np
 import os
-import librosa
-
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-import soundfile as sf
-import librosa.display
-from glob import glob
 from scipy.spatial.distance import cdist
 
 def dtw_distance(distances):

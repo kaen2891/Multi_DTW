@@ -8,6 +8,12 @@ The Reason why I make this is to adjust the length of the references spectrogram
 
 Basic theory is euclidean distance and DTW.
 
+# Installation
+```
+git clone https://github.com/kaen2891/Multi_DTW_with_Spectrogram.git
+cd Multi_DTW_with_Spectrogram
+python3 test_Multi_DTW.py
+```
 
 # How to use
 In test_Multi_DTW.py, there 2 ways to use Multi-DTW
